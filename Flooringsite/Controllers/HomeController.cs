@@ -19,12 +19,12 @@ namespace Flooringsite.Controllers
             return View();
         }
 
-        public ActionResult Residential()
+        public ActionResult CommercialResidential()
         {
             return View();
         }
 
-        public ActionResult Commercial()
+        public ActionResult Schedule()
         {
             return View();
         }

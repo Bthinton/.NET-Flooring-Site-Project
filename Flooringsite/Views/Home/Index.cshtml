@@ -1,0 +1,84 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<body>
+
+<header class="main-header">
+    <div class="container clearfix">
+        <h1 class="name">@Html.ActionLink("Hite Flooring Co", "Index")</h1>
+        <ul class="main-nav">
+            <li>@Html.ActionLink("About Us", "About")</li>
+            <li>@Html.ActionLink("Residential Flooring", "Residential")</li>
+            <li>@Html.ActionLink("Commercial Flooring", "Commercial")</li>
+        </ul>
+    </div>
+</header><!--main-header-->
+<div class="banner">
+    <div class="container">
+        <ul id="slider">
+            <li><img src="~/Content/Images/gallery1.jpg"></li>
+            <li><img src="~/Content/Images/gallery2.jpg"></li>
+            <li><img src="~/Content/Images/gallery3.jpg"></li>
+            <li><img src="~/Content/Images/gallery4.jpg"></li>
+        </ul>
+        <ul id="dots">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <button id="prev">Prev</button>
+        <button id="next">Next</button>
+    </div>
+
+</div>
+<h1 class="headline">Flooring Done Right</h1>
+    </div><!--banner-->
+<div class="container clearfix">
+
+    <div class="first col">
+        <h2>Welcome!</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lacinia nibh quis condimentum mattis. Fusce cursus vehicula viverra. Praesent facilisis, ipsum vel tincidunt consequat, ipsum mauris feugiat enim, at rhoncus lectus nibh nec nunc.</p>
+        <p> In hac habitasse platea dictumst. Vivamus venenatis ultricies magna, vitae malesuada tortor suscipit quis. Praesent et efficitur ante, non dapibus quam. Curabitur est ante, auctor et ligula non, porta molestie dolor. Quisque feugiat rutrum nibh in maximus. Pellentesque at mattis massa.</p>
+        <p>Nunc commodo massa non elit consequat efficitur. Proin ipsum mauris, eleifend ac sollicitudin eu, aliquam ac felis. Donec laoreet et magna vitae dictum. Mauris mollis felis a egestas mattis. Etiam congue purus eget erat dapibus lobortis.</p>
+    </div><!--secondary column-->
+
+    <div class="second col">
+        <h2>History</h2>
+        <figure>
+            <img class="feat-img" src="~/Content/Images/clay1.jpg" alt="Clay Hite">
+            <h4>???</h4>
+        </figure>
+        <p>Curabitur arcu dui, varius et pretium in, semper eu nibh. Ut lobortis lacus a lacus dapibus, vitae varius quam semper. Cras id urna nisi. Sed sagittis ultricies purus sed imperdiet. Phasellus ut massa quis nunc condimentum efficitur in in arcu. Aenean nec nibh vitae enim gravida posuere a sit amet sem. Nunc pellentesque finibus orci, non tincidunt felis bibendum ut. Curabitur quis pellentesque nisi, a elementum nunc. Nullam ultricies lacus at ligula pretium eleifend. Proin luctus gravida odio, nec rutrum urna venenatis at.</p>
+    </div><!--first column-->
+
+    <div class="third col">
+        <h2>Why Choose Us?</h2>
+        <p><strong>Pricing: </strong>Ut sit amet dapibus turpis. Nunc commodo tristique vulputate. Cras dictum varius tortor sit amet cursus. Suspendisse mattis a augue eget consequat. Quisque a consequat dolor. Donec fringilla ligula sit amet urna maximus imperdiet. Phasellus dignissim risus nec iaculis egestas</p>
+        <p><strong>Quality: </strong>Aliquam consequat, sem et maximus molestie, ligula est hendrerit nisi, quis sagittis leo ex quis sapien. Nulla ex libero, elementum vitae dignissim sed, feugiat ut nulla. Phasellus laoreet nunc varius risus efficitur volutpat. Aenean quis tincidunt erat. Suspendisse pulvinar, nibh quis maximus finibus, leo magna sagittis nulla, sed commodo leo odio et felis.</p>
+        <p><strong>Service: </strong>Aenean quis tincidunt erat. Suspendisse pulvinar, nibh quis maximus finibus, leo magna sagittis nulla, sed commodo leo odio et felis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras euismod purus accumsan lobortis mattis.</p>
+    </div><!--third column-->
+
+</div><!--container-->
+<div class="maps">
+    <h2>Map Us!</h2>
+    <i>9501 Shelbyville Rd,</i>
+    <i> Louisville, KY 40223</i>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3133.399138185467!2d-85.57808168466289!3d38.24704797967619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88699f9181904f03%3A0x565821681e37a4e8!2sCarpet+Mart!5e0!3m2!1sen!2sus!4v1497403864129" width="75%" height="250px" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+<div class="formparent">
+    <form class="form">
+        Name:<br>
+        <input type="text" name="name" class="text">
+        <br>
+        Contact Number:<br>
+        <input type="text" name="contactNumber" class="text">
+        <br>
+        Job:<br>
+        <input type="text" name="job" class="text">
+        <br>
+        <button class = "button">Submit</button>
+    </form>
+</div>
+</body>

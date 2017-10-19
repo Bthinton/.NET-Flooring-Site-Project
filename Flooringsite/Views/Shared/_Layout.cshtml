@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hite Flooring</title>
+    <link href="https://fonts.googleapis.com/css?family=Rokkitt" rel="stylesheet">
+    <link href="~/Content/style.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/normalize.css" rel="stylesheet" type="text/"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="~/Scripts/app.js"></script>
+</head>
+<body>
+    @RenderBody()
+    <footer class="main-footer">
+        <span class="main-footer">&copy;2017 Hite Flooring Co.</span>
+        <a href="https://www.facebook.com/taylor.hinton"><img src="~/Content/Images/facebook-wrap.png" alt="Facebook logo" class="social-icon"></a>
+    </footer>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

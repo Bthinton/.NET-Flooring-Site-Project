@@ -1,0 +1,350 @@
+/* Image carousel style */
+
+* {
+  font-family: 'Rokkitt', serif;
+  background: #fff;
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+#slider {
+  margin: 0 auto;
+  list-style: none;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+
+#slider img {
+  position: center;
+  top: 20px;
+  left: 40px;
+  width: 88%;
+  height: 88%;
+}
+
+#dots {
+  list-style:none;
+  padding:0px;
+  margin-bottom: 8px;
+
+}
+#dots li {
+  display:inline-block;
+  border-radius:10px;
+  width:10px;
+  height:10px;
+  margin: 0 5px;
+  border:2px solid #2284A1;
+  background: white;
+  cursor:pointer;
+}
+
+#dots li.active {
+  background:#2284A1;
+}
+
+.container,
+#slider,
+#slider img {
+	border-radius: 25px;
+}
+
+/*   Base Element Styles   */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	line-height: 1.6;
+	color: #3a3a3a;
+}
+
+p {
+	font-size: 1.2em;
+	margin-bottom: 1.5em;
+}
+
+h1 {
+  text-align: center;
+	padding-bottom: 50px;
+	font-size: 3em;
+}
+
+h2 {
+	font-size: 2.5em;
+}
+
+h2,
+a {
+	color: #093a58;
+}
+
+h2,
+h3,
+h4 {
+	margin-top: 0;
+}
+
+h4 {
+  margin-top: 15px;
+	margin-bottom: .4em;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+img {
+	max-width: 100%;
+}
+
+figure{
+	margin: 0;
+	line-height: 0;
+  position:relative;
+}
+
+/* Form Style */
+
+.form {
+	text-align: center;
+	display: inline-block;
+	background-color: #3acec2;
+	border-radius: 5px;
+	padding: 0 5px 10px;
+	width: 40%;
+}
+
+.formparent {
+	text-align: center;
+	padding: 40px 0;
+}
+
+.text {
+	width: 80%;
+}
+
+/* ---- Navigation ---- */
+
+.name {
+	font-size: 1.75em;
+	margin: 0;
+}
+
+.main-nav {
+	margin-top: 5px;
+  list-style: none;
+}
+
+.name a,
+.main-nav a {
+	display: block;
+	text-align: center;
+	padding: 10px 15px;
+}
+	
+.main-nav a {
+	font-size: 1.2em;
+	color: #3acec2;
+	text-transform: uppercase;
+}
+
+.main-nav a:hover {
+	color: #093a58;
+}
+
+
+
+/* ---- Layout Containers ---- */
+
+.main-header {
+	padding-top: .5em;
+	padding-bottom: .5em;
+}
+
+.banner,
+.main-footer {
+	text-align: center;
+
+}
+
+.banner {
+	color: red;
+	background: #3acec2;
+	padding: 3.2em 0;
+	margin-bottom: 60px;
+  width: 100%;
+}
+
+.col {
+	padding-right: 1em;
+	padding-left: 1em;
+}
+
+.main-footer {
+	background: #d9e4ea;
+	padding: 2em 0;
+	margin-top: 30px;
+}
+
+.maps {
+	text-align: center;
+}
+
+/* ---- Page Elements ---- */
+
+ul {
+	padding: 0;
+}
+
+.logo {
+	width: 190px;
+}
+
+.headline {
+	margin-bottom: 0;
+}
+
+.list{
+  display:none;
+}
+
+.container {
+  width: 90%;
+}
+
+.social-icon {
+  width: 30px;
+  height: 30px;
+  margin: 0 15px;
+	position: absolute;
+	border-radius: 3px;
+}
+
+.feat-img {
+    border-radius: 50px;
+}
+
+#prev,
+#next {
+	border-radius: 5px;
+	background-color: #3acec2;
+	color: #fff;
+}
+
+i {
+	display: block;
+
+}
+
+
+/*   Media Queries   */
+
+@media (min-width: 769px) {
+
+  #slider {
+		margin: 0 auto;
+		list-style: none;
+		position: relative;
+		width: 100%;
+		height: 100%;
+		padding: 10px;
+		box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+	}
+
+	.container {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.name,
+	.col {
+		float: left;
+	}
+
+	.first {
+		width: 40%;
+	}
+
+	.second {
+		width: 60%;
+	}
+
+	.main-nav {
+		float: right;
+	}
+
+	.main-nav li {
+		display: inline-block;
+		margin-left: 15px;
+	}
+
+	.img-container {
+		display: flex;
+	}
+
+	.list{
+		float: left;
+		height: 4.5em;
+		width: 5em;
+		display: inherit;
+	}
+
+	/*   Float clearfix   */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+
+}
+
+@media (min-width: 1025px) {
+	
+  #slider {
+  margin: 0 auto;
+  list-style: none;
+  position: relative;
+  width: 80%;
+  height: 80%x;
+  padding: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+	.container {
+		width: 80%;
+		max-width: 1150px;
+  
+	}
+
+	.second {
+		width: 40%;
+	}
+
+	.first,
+	.third {
+		width: 30%;
+	}
+
+.img-container {
+  flex-direction: column;
+  
+}
+    
+ .clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+
+.list{
+  display:inherit;

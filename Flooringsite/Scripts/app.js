@@ -50,7 +50,7 @@ $(document).ready(function () {
     moveTo('next');
   });
   
-  //initialize slider load
+  //initializes the slider load
   moveTo('next');
 });
 

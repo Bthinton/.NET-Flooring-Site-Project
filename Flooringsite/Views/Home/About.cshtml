@@ -1,8 +1,9 @@
 ﻿@{
-    ViewBag.Title = "About";
+    ViewBag.Title = "Index";
 }
 
 <body>
+
     <header class="main-header">
         <div class="container clearfix">
             <h1 class="name">@Html.ActionLink("Hite Flooring Co", "Index")</h1>
@@ -12,6 +13,32 @@
                 <li>@Html.ActionLink("Schedule Today", "Schedule")</li>
             </ul>
         </div>
-    </header>
-</body>
+    </header><!--main-header-->
+    <div class="container clearfix">
 
+        <div class="first col">
+            <h2>History</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lacinia nibh quis condimentum mattis. Fusce cursus vehicula viverra. Praesent facilisis, ipsum vel tincidunt consequat, ipsum mauris feugiat enim, at rhoncus lectus nibh nec nunc.</p>
+            <p> In hac habitasse platea dictumst. Vivamus venenatis ultricies magna, vitae malesuada tortor suscipit quis. Praesent et efficitur ante, non dapibus quam. Curabitur est ante, auctor et ligula non, porta molestie dolor. Quisque feugiat rutrum nibh in maximus. Pellentesque at mattis massa.</p>
+            <p>Nunc commodo massa non elit consequat efficitur. Proin ipsum mauris, eleifend ac sollicitudin eu, aliquam ac felis. Donec laoreet et magna vitae dictum. Mauris mollis felis a egestas mattis. Etiam congue purus eget erat dapibus lobortis.</p>
+        </div><!--first column-->
+
+        <div class="second col">
+            <h2>Owner</h2>
+            <figure>
+                <img class="feat-img" src="~/Content/Images/clay1.jpg" alt="Clay Hite">
+            </figure>
+            <h4>Owner Clay Hite</h4>
+            <p>Curabitur arcu dui, varius et pretium in, semper eu nibh. Ut lobortis lacus a lacus dapibus, vitae varius quam semper. Curabitur quis pellentesque nisi, a elementum nunc.</p>
+            <p>Nullam ultricies lacus at ligula pretium eleifend. Proin luctus gravida odio, nec rutrum urna venenatis at. Cras id urna nisi. Sed sagittis ultricies purus sed imperdiet. Phasellus ut massa quis nunc condimentum efficitur in in arcu. Aenean nec nibh vitae enim gravida posuere a sit amet sem. Nunc pellentesque finibus orci, non tincidunt felis bibendum ut.</p>
+        </div><!--second column-->
+
+        <div class="third col">
+            <h2>Future Objectives</h2>
+            <p>Ut sit amet dapibus turpis. Nunc commodo tristique vulputate. Cras dictum varius tortor sit amet cursus. Suspendisse mattis a augue eget consequat. Quisque a consequat dolor. Donec fringilla ligula sit amet urna maximus imperdiet. Phasellus dignissim risus nec iaculis egestas</p>
+            <p>Aliquam consequat, sem et maximus molestie, ligula est hendrerit nisi, quis sagittis leo ex quis sapien. Nulla ex libero, elementum vitae dignissim sed, feugiat ut nulla. Phasellus laoreet nunc varius risus efficitur volutpat. Aenean quis tincidunt erat. Suspendisse pulvinar, nibh quis maximus finibus, leo magna sagittis nulla, sed commodo leo odio et felis.</p>
+            <p>Aenean quis tincidunt erat. Suspendisse pulvinar, nibh quis maximus finibus, leo magna sagittis nulla, sed commodo leo odio et felis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras euismod purus accumsan lobortis mattis.</p>
+        </div><!--third column-->
+
+    </div><!--container-->
+</body>

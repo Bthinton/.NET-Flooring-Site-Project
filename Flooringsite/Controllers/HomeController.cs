@@ -32,13 +32,14 @@ namespace Flooringsite.Controllers
             return View();
         }
 
-        // GET: Customer/Create
+        // View for customers to make appointments
         public ActionResult Schedule()
         {
             return View();
         }
 
         // POST: Customer/Create
+        // Creates appointment and writes to database
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]

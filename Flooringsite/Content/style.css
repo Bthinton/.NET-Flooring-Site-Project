@@ -175,7 +175,6 @@ figure{
 .banner,
 .main-footer {
 	text-align: center;
-
 }
 
 .banner {
@@ -252,7 +251,11 @@ i {
 
 @media (min-width: 769px) {
 
-  #slider {
+    .social-icon {
+        display: inline-block
+    }
+
+    #slider {
 		margin: 0 auto;
 		list-style: none;
 		position: relative;
@@ -315,6 +318,10 @@ i {
 }
 
 @media (min-width: 1025px) {
+
+    .social-icon {
+        display: inline-block;
+    }
 
     #slider {
         margin: 0 auto;

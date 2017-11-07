@@ -7,6 +7,7 @@ using System.Collections;
 
 namespace Flooringsite.Models
 {
+    //Class for all table data input
     public class Customer
     {
         [Key]

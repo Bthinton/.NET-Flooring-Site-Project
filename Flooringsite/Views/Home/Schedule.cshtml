@@ -1,4 +1,6 @@
-﻿@model Flooringsite.Models.Customer
+﻿@*Scheduling page used by customers to schedule an appointment*@
+
+@model Flooringsite.Models.Customer
 
 @{
     ViewBag.Title = "Create";
@@ -15,6 +17,7 @@
             </ul>
         </div>
     </header>
+    @*Form/create method for customer use to make appointments*@
     <div class="formparent">
         @using (Html.BeginForm())
         {
